@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="anac2015">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/genius_docs.zip!/" />
+      <root url="jar://$PROJECT_DIR$/genius.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
