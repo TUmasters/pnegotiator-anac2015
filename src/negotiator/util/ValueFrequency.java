@@ -1,4 +1,4 @@
-package negotiator.groupn;
+package negotiator.util;
 import java.util.Comparator;
 
 import negotiator.issue.ValueDiscrete;
@@ -6,14 +6,15 @@ import negotiator.issue.ValueDiscrete;
 public class ValueFrequency {
 	public ValueDiscrete value;
 	public double utility;
-	public int opponentFrequency;
+	public int[] opponentFrequency;
 	public int ourFrequency;
 	
-	public ValueFrequency(ValueDiscrete val, double util) {
+	public ValueFrequency(ValueDiscrete val, double util, int P) {
 		value = val;
 		utility = util;
-		opponentFrequency = 1;
-		ourFrequency = 1;
+		opponentFrequency = new int[P];
+        for(int i = 0; i < opponentFrequency.length; i++) opponentFrequency[i] = 1;
+		ourFrequency = 0;
 	}
 }
 
