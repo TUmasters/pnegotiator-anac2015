@@ -2,10 +2,10 @@
 <repository fileName="partyrepository.xml">
     <items>
         <agentRepItems/>
-        <partyRepItems
-        ><partyRepItem
+        <partyRepItems>
+        <partyRepItem
                     description="Agent for group n"
-                    classPath="negotiator.groupn.Groupn"
+                    classPath="negotiator.groupn.BayesLearner"
                     partyName="Group n"
                     protocolClassPath="negotiator.protocol.AlternatingOfferCounterOfferProtocol"/>
             <partyRepItem
@@ -30,6 +30,26 @@
                     partyName="Random party"
                     protocolClassPath="negotiator.protocol.AlternatingOfferCounterOfferProtocol">
             </partyRepItem>
+	    <partyRepItem
+                    description="Agent for group ZCK"
+                    classPath="negotiator.groupn.GroupZCK"
+                    partyName="Group ZCK1"
+                    protocolClassPath="negotiator.protocol.AlternatingOfferCounterOfferProtocol"/>
+	    <partyRepItem
+                    description="Agent for group ZCK"
+                    classPath="negotiator.groupn.GroupZCK2"
+                    partyName="Group ZCK2"
+                    protocolClassPath="negotiator.protocol.AlternatingOfferCounterOfferProtocol"/>
+	    <partyRepItem
+                    description="Agent for group O"
+                    classPath="negotiator.groupn.GroupO"
+                    partyName="Group O"
+                    protocolClassPath="negotiator.protocol.AlternatingOfferCounterOfferProtocol"/>
+            <partyRepItem
+                    description="Initially greedy bayes agent"
+                    classPath="negotiator.groupn.BayesLearner"
+                    partyName="BayesLearner"
+                    protocolClassPath="negotiator.protocol.AlternatingOfferCounterOfferProtocol" />
         </partyRepItems>
         <domainRepItem/>
         <protocolRepItem/>
